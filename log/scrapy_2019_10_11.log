@@ -1,0 +1,262 @@
+2019-10-11 11:16:31 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: enterpriseSpider)
+2019-10-11 11:16:31 [scrapy.utils.log] INFO: Versions: lxml 4.3.4.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.7.3 (default, Mar 27 2019, 16:54:48) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Darwin-18.6.0-x86_64-i386-64bit
+2019-10-11 11:16:31 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'enterpriseSpider', 'FEED_FORMAT': 'csv', 'FEED_URI': 'szhome.csv', 'LOG_FILE': 'log/scrapy_2019_10_11.log', 'NEWSPIDER_MODULE': 'enterpriseSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['enterpriseSpider.spiders']}
+2019-10-11 11:16:31 [scrapy.extensions.telnet] INFO: Telnet Password: b3abfdad6f182c11
+2019-10-11 11:16:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2019-10-11 11:16:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-10-11 11:16:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-10-11 11:16:31 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-10-11 11:16:31 [scrapy.core.engine] INFO: Spider opened
+2019-10-11 11:16:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-10-11 11:16:31 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-10-11 11:16:31 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://bol.szhome.com/errorpage.htm?aspxerrorpath=/robots.txt> from <GET http://bol.szhome.com/robots.txt>
+2019-10-11 11:16:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/errorpage.htm?aspxerrorpath=/robots.txt> (referer: None)
+2019-10-11 11:16:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1> (referer: None)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/9725.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/4579.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/9725.htm>
+{'address': '龙华区民康路与梅观高速交汇处',
+ 'category': '商品住宅',
+ 'developer': '深圳市新宏投资发展有限公司',
+ 'field': '龙华区',
+ 'name': '恒壹四季华府',
+ 'number': '待定',
+ 'parking_number': '待定'}
+2019-10-11 11:16:33 [root] INFO: header_map = 
+2019-10-11 11:16:33 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x10a28bdd8>>
+Traceback (most recent call last):
+  File "//anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "//anaconda3/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "//anaconda3/lib/python3.7/site-packages/scrapy/extensions/feedexport.py", line 247, in item_scraped
+    slot.exporter.export_item(item)
+  File "//anaconda3/lib/python3.7/site-packages/scrapy/exporters.py", line 239, in export_item
+    self._write_headers_and_set_fields_to_export(item)
+  File "/Users/ali-pc/PycharmProjects/enterpriceSpider/enterpriseSpider/csv_exporter.py", line 37, in _write_headers_and_set_fields_to_export
+    headers = [self.header_map.get(header, header) for header in headers]
+  File "/Users/ali-pc/PycharmProjects/enterpriceSpider/enterpriseSpider/csv_exporter.py", line 37, in <listcomp>
+    headers = [self.header_map.get(header, header) for header in headers]
+AttributeError: 'EnterpriseCsvItemExporter' object has no attribute 'header_map'
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/4692.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/5870.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/9071.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/4579.htm>
+{'address': '深圳市罗湖区罗沙路南，延芳路旁',
+ 'category': '商品住宅',
+ 'developer': '深圳市安业置业发展有限公司',
+ 'field': '罗湖区',
+ 'name': '帝景台',
+ 'number': '476',
+ 'parking_number': '609'}
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/8485.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/9474.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/9742.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/9676.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/4039.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/4692.htm>
+{'address': '宝安区石岩街道罗租工业大道与建兴路交汇处',
+ 'category': '厂房',
+ 'developer': '深圳市宝安TCL海创谷科技园发展有限公司',
+ 'field': '宝安区',
+ 'name': '艾美特工业区旧改',
+ 'number': '待定',
+ 'parking_number': '待定'}
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/8986.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/9840.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/4089.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/9833.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/8506.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/7899.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/5870.htm>
+{'address': '深圳市坪山区碧沙北路以西、龙勤路以南',
+ 'category': '商品住宅、商业',
+ 'developer': '深圳市金碧房地产开发有限公司',
+ 'field': '坪山区',
+ 'name': '凤凰公馆',
+ 'number': '1044',
+ 'parking_number': '1500'}
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/9885.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/5930.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/9071.htm>
+{'address': '龙岗区平湖街道东深公路转天鹅路',
+ 'category': '商品住宅,商业',
+ 'developer': '深圳市特发衡佳房地产投资有限公司',
+ 'field': '龙岗区',
+ 'name': '特发天鹅湖畔',
+ 'number': '2161',
+ 'parking_number': '2070'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/8485.htm>
+{'address': '宝荷路与宝荷路支线交叉口宝荷欣苑西侧500米',
+ 'category': '商品住宅',
+ 'developer': '深圳市碧海投资发展有限公司',
+ 'field': '龙岗区',
+ 'name': '京基御景半山',
+ 'number': '1914',
+ 'parking_number': '2117'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/9474.htm>
+{'address': '港城路与妈湾一路交汇处',
+ 'category': '商品住宅',
+ 'developer': '深国际前海置业（深圳）有限公司',
+ 'field': '南山区',
+ 'name': '颐湾府',
+ 'number': '待定',
+ 'parking_number': '381'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/9742.htm>
+{'address': '深圳市龙华区民治街道',
+ 'category': '商品住宅、商业',
+ 'developer': '深圳市深国际联合置地有限公司，万科企业..',
+ 'field': '龙华区',
+ 'name': '深国际万科和雅轩',
+ 'number': '704',
+ 'parking_number': '900'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/9676.htm>
+{'address': '深圳市龙岗区坂雪岗大道与永香路交汇处',
+ 'category': '商品住宅',
+ 'developer': '深圳市大族云峰投资有限公司',
+ 'field': '龙岗区',
+ 'name': '大族·云峰（二期）',
+ 'number': '1048',
+ 'parking_number': '1063'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/4039.htm>
+{'address': '中国·前海·创业二路与建安一路交汇处西南角',
+ 'category': '商品住宅、商业',
+ 'developer': '中粮地产发展（深圳）有限公司',
+ 'field': '宝安区',
+ 'name': '大悦城·天玺壹号',
+ 'number': '1113',
+ 'parking_number': '1397'}
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/9886.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://bol.szhome.com/house/8078.htm> (referer: http://bol.szhome.com/search.html?xzq=0&zone=0&dtyx=0&dtst=0&price=0&hx=0&xszt=0&ord=0&prif=0&prit=0&kwd=&page=1)
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/8986.htm>
+{'address': '宝安区石岩街道石环北路与横坑路交汇处（大树林公园旁）',
+ 'category': '商品住宅,商业住宅,商业',
+ 'developer': '深圳市嘉信置业房地产开发有限公司',
+ 'field': '宝安区',
+ 'name': '嘉信·云峰',
+ 'number': '635',
+ 'parking_number': '494'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/9840.htm>
+{'address': '深圳市盐田区盐田街道洪安路与东海四街交汇处',
+ 'category': '商品住宅、商业',
+ 'developer': '深圳市盐田佳兆业房地产开发有限公司',
+ 'field': '盐田区',
+ 'name': '佳兆业盐田城市广场三期',
+ 'number': '1246',
+ 'parking_number': '1122'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/4089.htm>
+{'address': '南山区留仙大道塘朗地铁站D出口（西行约200米）',
+ 'category': '商品住宅、商业',
+ 'developer': '宝能城有限公司/深圳莱华置业有限公司',
+ 'field': '南山区',
+ 'name': '宝能城',
+ 'number': '2705',
+ 'parking_number': '5500'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/9833.htm>
+{'address': '盐排高速与深盐路交汇处',
+ 'category': '商业,写字楼',
+ 'developer': '深圳市保惠物流有限公司',
+ 'field': '盐田区',
+ 'name': '东部冰雪创新城',
+ 'number': '220',
+ 'parking_number': '待定'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/8506.htm>
+{'address': '深圳市盐田区深盐路旁',
+ 'category': '其他',
+ 'developer': '深圳市创世和实业有限公司',
+ 'field': '盐田区',
+ 'name': '合景同创广场',
+ 'number': '687',
+ 'parking_number': '待定'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/7899.htm>
+{'address': '宝安区上星南路与上星路交汇处',
+ 'category': '商品住宅、商业',
+ 'developer': '深圳西城房地产开发有限公司',
+ 'field': '宝安区',
+ 'name': '万科星城',
+ 'number': '394',
+ 'parking_number': '3245'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/9885.htm>
+{'address': '宝安中心区兴业路与海秀路交汇处',
+ 'category': '写字楼',
+ 'developer': '鹏鼎控股(深圳)股份有限公司',
+ 'field': '宝安区',
+ 'name': '鹏鼎时代大厦',
+ 'number': '待定',
+ 'parking_number': '500'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/5930.htm>
+{'address': '深圳市坪山新区龙坪路与松坪路交汇处',
+ 'category': '商品住宅',
+ 'developer': '深圳市鸿腾投资管理有限公司',
+ 'field': '坪山区',
+ 'name': '恒大城',
+ 'number': '2250',
+ 'parking_number': '4500'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/9886.htm>
+{'address': '龙岗大道与德政路交汇处北侧',
+ 'category': '商品住宅,写字楼',
+ 'developer': '深圳市九州房地产开发有限公司',
+ 'field': '龙岗区',
+ 'name': '天泊广场',
+ 'number': '待定',
+ 'parking_number': '1099'}
+2019-10-11 11:16:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://bol.szhome.com/house/8078.htm>
+{'address': '深圳市光明区双明大道与华夏一路交汇处',
+ 'category': '商品住宅,安居房,商业',
+ 'developer': '深圳市特区建设发展集团有限公司',
+ 'field': '光明区',
+ 'name': '乐府花园',
+ 'number': '1036',
+ 'parking_number': '980'}
+2019-10-11 11:16:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-10-11 11:16:33 [scrapy.extensions.feedexport] INFO: Stored csv feed (19 items) in: szhome.csv
+2019-10-11 11:16:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7778,
+ 'downloader/request_count': 23,
+ 'downloader/request_method_count/GET': 23,
+ 'downloader/response_bytes': 407555,
+ 'downloader/response_count': 23,
+ 'downloader/response_status_count/200': 22,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 10, 11, 3, 16, 33, 625569),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 43,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 51744768,
+ 'memusage/startup': 51744768,
+ 'request_depth_max': 1,
+ 'response_received_count': 22,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 21,
+ 'scheduler/dequeued/memory': 21,
+ 'scheduler/enqueued': 21,
+ 'scheduler/enqueued/memory': 21,
+ 'start_time': datetime.datetime(2019, 10, 11, 3, 16, 31, 799098)}
+2019-10-11 11:16:33 [scrapy.core.engine] INFO: Spider closed (finished)
