@@ -8,7 +8,7 @@ class SZQFangHomeSpider(scrapy.Spider):
 
     start_url = 'https://shenzhen.qfang.com/office/garden/rent/n%d'
 
-    page_no = 25
+    page_no = 1
 
     def start_requests(self):
         for i in range(self.page_no):

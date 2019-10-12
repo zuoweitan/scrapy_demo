@@ -8,7 +8,7 @@ class SZOldHomeSpider(scrapy.Spider):
 
     start_url = 'http://zf.szhome.com/community.html?xzq=0&zone=0&price=0&ord=0&prif=0&prit=0&kwd=&page=%d'
 
-    page_no = 419
+    page_no = 1
 
     def start_requests(self):
         for i in range(self.page_no):
